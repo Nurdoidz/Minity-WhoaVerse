@@ -1,8 +1,300 @@
+/* ! Body
+================================================================================ */
+
+    body {
+        color:       #333;
+        font-family: Arial,sans-serif;
+        font-size:   10px;
+    }
+
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,
+    blockquote,th,td,iframe {margin: 0;padding: 0;}
+
+    a {color: #4AABE7;}
+    a,a:visited {text-decoration: none;}
+
+    .flat-list {
+        list-style-type: none;
+        display: inline;
+    }
+
+    .flat-list li,.flat-list form {
+        display:     inline;
+        white-space: nowrap;
+    }
+
+    .separator {
+        color:  inherit;
+        margin: 0 2px;
+    }
+
+    .user {color: inherit;}
+
+        .user .userkarma {
+            border-bottom: 1px dotted #999;
+            cursor:        help;
+            font-weight:   normal;
+        }
+
+
+
+
 /* ! Header
 ================================================================================ */
 
-    #header {border: 0;height: 50px !important;}
+    #header {
+        background-position: center bottom;
+        border-bottom:       1px solid #DCDCDC;
+        height:              75px !important;
+        position:            relative;
+        z-index:             99;
+    }
 
 
-    #header-bottom-left {margin: 0;}
+    /* ! Header : Top
+    -------------------------------------------------------------------------------- */
+
+        #sr-header-area {
+            background:     #FFF;
+            border-bottom:  1px solid #DCDCDC;
+            font-size:      100%;
+            line-height:    16px;
+            height:         18px;
+            text-transform: none;
+            white-space:    nowrap;
+        }
+        #sr-header-area:hover {
+            -webkit-box-shadow: 0 0 6px hsla(0.0,0.0%,0.0%,0.3);
+                    box-shadow: 0 0 6px hsla(0.0,0.0%,0.0%,0.3);
+        }
+
+        .hover a:hover {text-decoration: underline;}
+
+
+        #sr-header-area .width-clip {
+            left:     0;
+            position: absolute;
+            right:    0;
+        }
+
+
+        /* ! Header : Top : Subverses list
+        -------------------------------------------------------------------------------- */
+
+            #sr-bar li a {
+                color:              #818181;
+                -webkit-transition: color 0.2s ease;
+                -moz-transition:    color 0.2s ease;
+                -ms-transition:     color 0.2s ease;
+                -o-transition:      color 0.2s ease;
+                transition:         color 0.2s ease;
+            }
+            #sr-header-area:hover #sr-bar li a {color: #444;}
+
+
+            #sr-header-area .sr-list {
+                margin-left: 5px;
+                overflow:    hidden;
+            }
+            
+                .sr-list li a {color: #444;}
+
+            .sr-bar .separator {visibility: hidden;}
+
+
+            #sr-more-link {
+                background:     #FFF;
+                color:          #444;
+                display:        inline-block;
+                font-weight:    normal;
+                letter-spacing: 1px;
+                margin:         0;
+                padding:        1px 7px;
+                position:       absolute;
+                right:          0;
+                top:            -1px;
+            }
+            #sr-more-link:hover {
+                background:      #4AABE7;
+                color:           #FFF;
+                text-decoration: none;
+            }
+
+
+            /* ! Header : Top : Subverses list : Subscription menu
+            -------------------------------------------------------------------------------- */
+
+                .whoaSubscriptionMenu {margin: 0;padding: 0;}
+
+                .whoaSubscriptionMenu li {float: left;list-style: none;}
+
+                    .whoaSubscriptionMenu li ul {
+                        border:             1px solid;
+                        border-color:       #FFF #EDEDED #EDEDED;
+                        -webkit-box-shadow: 3px 3px 3px hsla(0.0,0.0%,0.0%,0.2);
+                        box-shadow:         3px 3px 3px hsla(0.0,0.0%,0.0%,0.2);
+                        font-size:          120%;
+                        margin:             0;
+                        padding:            0;
+                        position:           absolute;
+                        visibility:         hidden;
+                    }
+
+                        .whoaSubscriptionMenu li ul li {display: inline;float: none;}
+
+                        .whoaSubscriptionMenu li ul li a:link,
+                        .whoaSubscriptionMenu li ul li a:visited {
+                            background:      #FFF;
+                            border-bottom:   1px solid #EDEDED;
+                            color:           #444;
+                            display:         block;
+                            padding:         3px 7px;
+                            text-decoration: none;
+                            width:           auto;
+                        }
+                        .whoaSubscriptionMenu li ul li a:hover {
+                            background: #4AABE7;
+                            background: -webkit-linear-gradient(top,#54B5F1,#4AABE7);
+                            background: -moz-linear-gradient(top,#54B5F1,#4AABE7);
+                            background: -ms-linear-gradient(top,#54B5F1,#4AABE7);
+                            background: -o-linear-gradient(top,#54B5F1,#4AABE7);
+                            color:      #FFF !important;
+                        }
+
+
+    /* ! Header : Left
+    -------------------------------------------------------------------------------- */
+
+        #header-bottom-left {
+            background:   #F6F6F6;
+            border-color: #DCDCDC;
+            border-style: none none solid;
+            border-width: 1px;
+            font-size:    12px;
+            margin:       0;
+        }
+
+        
+        /* ! Header : Left : Logo
+        -------------------------------------------------------------------------------- */
+        
+            #header-img {margin: 0 12px 10px;}
+
+
+        /* ! Header : Left : Tab menu
+        -------------------------------------------------------------------------------- */
+
+            .tabmenu {
+                display:         inline-block;
+                line-height:     57px;
+                list-style-type: none;
+                margin:          0;
+                vertical-align:  bottom;
+                white-space:     nowrap;
+            }
+
+
+                /* ! Header : Left : Tab menu : Tab
+                -------------------------------------------------------------------------------- */
+
+                    .tabmenu li {
+                        display:     inline;
+                        font-weight: normal;
+                        margin:      0 3px;
+                    }
+
+                    .tabmenu li a {background: none;padding: 7px 13px;}
+
+
+                    .tabmenu li.disabled a,.tabmenu li.selected a {
+                        border:                1px solid transparent;
+                        -webkit-border-radius: 3px;
+                        border-radius:         3px;
+                    }
+
+
+                    /* ! Header : Left : Tab menu : Tab : Selected
+                    -------------------------------------------------------------------------------- */
+
+                        .tabmenu li.selected a {
+                            background: #4AABE7;
+                            background: -webkit-linear-gradient(top,#54B5F1,#4AABE7);
+                            background: -moz-linear-gradient(top,#54B5F1,#4AABE7);
+                            background: -ms-linear-gradient(top,#54B5F1,#4AABE7);
+                            background: -o-linear-gradient(top,#54B5F1,#4AABE7);
+                            border:     1px solid #4C9FD2;
+                            color:      #FFF;
+                            z-index:    100;
+                        }
+                        .tabmenu li.selected a:hover {
+                            background:   #66C2FB;
+                            background:   -webkit-linear-gradient(top,#66C2FB,#5AB3EA);
+                            background:   -moz-linear-gradient(top,#66C2FB,#5AB3EA);
+                            background:   -ms-linear-gradient(top,#66C2FB,#5AB3EA);
+                            background:   -o-linear-gradient(top,#66C2FB,#5AB3EA);
+                            border-color: #5BACDE;
+                        }
+
+
+                    /* ! Header : Left : Tab menu : Tab : Unselected
+                    -------------------------------------------------------------------------------- */
+                    
+                        .tabmenu li.disabled a {color: #555;}
+                        .tabmenu li.disabled a:hover {
+                            background: #EBEBEB;
+                            background: -webkit-linear-gradient(top,#EBEBEB,#E6E6E6);
+                            background: -moz-linear-gradient(top,#EBEBEB,#E6E6E6);
+                            background: -ms-linear-gradient(top,#EBEBEB,#E6E6E6);
+                            background: -o-linear-gradient(top,#EBEBEB,#E6E6E6);
+                            border:     1px solid #DEDEDE;
+                            color:      #333;
+                        }
+
+
+    /* ! Header : Right
+    -------------------------------------------------------------------------------- */
+    
+        #header-bottom-right {
+            background:            none;
+            -webkit-border-radius: 0;
+            border-radius:         0;
+            bottom:                unset;
+            line-height:           100%;
+            padding:               7px;
+            position:              absolute;
+            right:                 0;
+            top:                   18px;
+        }
+
+        #header-bottom-right a {color: #555;}
+        #header-bottom-right a:hover {color: #4AABE7;}
+
+        #header-bottom-right .separator {
+            color:  #BBB;
+            margin: 0 4px;
+        }
+
+        #mail {
+            display:     inline-block;
+            overflow:    hidden;
+            position:    relative;
+            text-indent: -9999px;
+            top:         2px;
+        }
+
+            #mail.havemail {
+                background:          url(http://i.imgur.com/Kp5FRHm.png);
+                background-position: -15px 0;
+                cursor:              pointer;
+                height:              10px;
+                width:               15px;
+            }
+            #mail.nohavemail {
+                background:          url(http://i.imgur.com/Kp5FRHm.png);
+                background-position: 0 0;
+                cursor:              pointer;
+                height:              10px;
+                width:               15px;
+            }
+
 
