@@ -65,7 +65,7 @@
         }
         #sr-header-area:hover {
             -webkit-box-shadow: 0 0 6px hsla(0.0,0.0%,0.0%,0.3);
-                    box-shadow: 0 0 6px hsla(0.0,0.0%,0.0%,0.3);
+            box-shadow:         0 0 6px hsla(0.0,0.0%,0.0%,0.3);
         }
 
         .hover a:hover {text-decoration: underline;}
@@ -181,6 +181,33 @@
             #header-img {margin: 0 12px 10px;}
 
 
+        /* ! Header : Left : Page name
+        -------------------------------------------------------------------------------- */
+
+            .pagename {
+                font-size:      16px;
+                font-variant:   normal;
+                font-weight:    normal;
+                margin:         0 14px 0 3px;
+                vertical-align: text-bottom;
+            }
+
+            .pagename a {
+                border:                2px solid transparent;
+                -webkit-border-radius: 3px;
+                border-radius:         3px;
+                color:                 #777;
+                display:               inline-block;
+                padding:               6px;
+            }
+            .pagename a:hover {
+                background:      #FFF;
+                border-color:    #EEE;
+                color:           #555;
+                text-decoration: none;
+            }
+
+
         /* ! Header : Left : Tab menu
         -------------------------------------------------------------------------------- */
 
@@ -255,7 +282,8 @@
     -------------------------------------------------------------------------------- */
     
         #header-bottom-right {
-            background:            none;
+            background:            #FFF;
+            border:                1px solid #EBEBEB;
             -webkit-border-radius: 0;
             border-radius:         0;
             bottom:                unset;
@@ -263,7 +291,7 @@
             padding:               7px;
             position:              absolute;
             right:                 0;
-            top:                   18px;
+            top:                   22px;
         }
 
         #header-bottom-right a {color: #555;}
