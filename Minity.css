@@ -34,29 +34,20 @@
 
     label {font-size: 12px; font-weight: normal;}
 
-    .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,
-    .col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12 {
-        float: left;
-    }
-    .form-group .col-md-2 {
-        min-width: 150px;
-    }
-    .form-group .col-md-3 {
-        width: auto;
-    }
-    .form-group .col-md-2 .form-control {
-        width: auto;
-    }
-    .form-group .col-md-3 .form-control {
-        width: auto;
-    }
-    .form-horizontal .control-label {
-        text-align: left;
-    }
-
     .alert {
         -webkit-border-radius: 3px;
         border-radius:         3px;
+    }
+
+    .alert-danger {
+        background:   #F56363;
+        background:   -webkit-linear-gradient(top,#F56363,#EF4444);
+        background:   -moz-linear-gradient(top,#F56363,#EF4444);
+        background:   -ms-linear-gradient(top,#F56363,#EF4444);
+        background:   -o-linear-gradient(top,#F56363,#EF4444);
+        border-color: #E14242;
+        color:        #FFF;
+        font-size:    12px;
     }
 
     .alert-info {
@@ -70,6 +61,68 @@
         font-size:    12px;
     }
 
+    .alert-warning {
+        background:   #F5E163;
+        background:   -webkit-linear-gradient(top,#F5E163,#E1CD4B);
+        background:   -moz-linear-gradient(top,#F5E163,#E1CD4B);
+        background:   -ms-linear-gradient(top,#F5E163,#E1CD4B);
+        background:   -o-linear-gradient(top,#F5E163,#E1CD4B);
+        border-color: #E1CB42;
+        color:        #746801;
+        font-size:    12px;
+    }
+
+    .alert-singlethread {
+        background:    #CFCFCF;
+        color:         black;
+        padding:       5px;
+        margin:        15px;
+        border:        1px solid #606060;
+        display:       inline-block;
+        border-radius: 7px;
+    }
+
+    .circle-step {
+        background:    #66c4e0;
+        border-radius: 15px;
+        border:        2px solid #FFF !important;
+        box-shadow:    0px 2px 2px rgba(0, 0, 0, 0.4);
+        color:         #fff;
+        display:       inline-block;
+        font-size:     12px;
+        height:        30px;
+        line-height:   26px;
+        text-align:    center;
+        width:         30px;
+    }
+
+    .disabled-downvote {cursor: help;}
+
+    .eppnotice {
+        background-color: #F2F2F2;
+        color:            #777;
+        padding-right:    35px;
+        padding:          4px;
+    }
+
+    .gray {color: #DCDCDC;}
+
+    .intro-text {font-size: 12px;}
+
+    .label {
+        -webkit-border-radius: 2px;
+        border-radius:         2px;
+        color:                 #555;
+        display:               inline-block;
+        font-size:             10px;
+        font-weight:           normal;
+        line-height:           1;
+        padding:               5px;
+        text-align:            center;
+    }
+
+    .label-default {background: #DDD;}
+
     .menuarea {
         border:    0;
         font-size: 11px;
@@ -82,6 +135,8 @@
 
             .dropdown.lightdrop .selected {color: inherit; text-decoration: none;}
 
+    .message-moderators-temporary-class {cursor: help;}
+
     .midcol {
         background:   none;
         float:        left;
@@ -90,15 +145,33 @@
         overflow:     hidden;
     }
 
+    .moderator.accept-invite .main:before {
+        background-image:    url(/Graphics/WVSprite.png);
+        background-position: 0px -642px;
+        background-repeat:   no-repeat;
+    }
+
     .paragraph-text-left {
         font-size:   inherit;
         text-align:  left;
+    }
+
+    .row {margin-bottom: 5px; margin-right: 0;}
+
+    .searchresults {
+        border-bottom: 1px solid #DDD;
+        font-size:     12px;
+        overflow:      hidden;
+        padding:       10px;
+        white-space:   nowrap;
     }
 
     .separator {
         color:  inherit;
         margin: 0 2px;
     }
+
+    .sidebar-badge {cursor: help;}
 
     .submissionscore {
         background:            #F6F6F6;
@@ -113,6 +186,16 @@
     }
 
     .subreddit {margin: 0;}
+
+    .subversedescriptionbox {
+        background:            #F6F6F6;
+        border:                1px solid #EEE;
+        -webkit-border-radius: 3px;
+        border-radius:         3px;
+        display:               inline-block;
+        font-size:             12px;
+        text-align:            left;
+    }
 
     .tagline {
         color:       #868686;
@@ -130,6 +213,30 @@
 
     .text-danger:hover {color: #FFF;}
 
+    .titlebox form.leavecontributor-button:before {
+        background-image:    url(/Graphics/WVSprite.png);
+        background-position: -66px -730px;
+        background-repeat:   no-repeat;
+    }
+
+    .titlebox form.flairtoggle {padding: 0;}
+
+    .titlebox form.toggle, .leavemoderator {
+        background: #FFF;
+        color:      gray;
+        font-size:  smaller;
+        margin:     0;
+        padding:    5px 0px;
+    }
+
+    .titlebox .leavemoderator:before, .moderator.toggle .main:before {
+        background-image:    url('/Graphics/WVSprite.png');
+        background-position: 0 -1546px;
+        background-repeat:   no-repeat;
+    }
+
+    .unreadNotification {background-color: #ff9da4 !important;}
+
     .user {color: inherit;}
 
         .user .userkarma {
@@ -140,6 +247,38 @@
         }
 
     .usertext {font-size: 14px;}
+
+    .usertable .moderator.toggle .main:before,.titlebox .leavemoderator:before,
+    .titlebox form.leavecontributor-button:before,.icon-menu .reddit-edit:before,
+    .icon-menu .reddit-traffic:before,.icon-menu .reddit-reported:before,
+    .icon-menu .reddit-spam:before,.icon-menu .wikiaction-pages:before,
+    .icon-menu .wikiaction-revisions:before,.icon-menu .reddit-ban:before,
+    .icon-menu .reddit-flair:before,.icon-menu .reddit-moderationlog:before,
+    .icon-menu .reddit-unmoderated:before,.icon-menu .reddit-moderators:before,
+    .icon-menu .moderator-mail:before,.icon-menu .reddit-contributors:before,
+    .icon-menu .reddit-modqueue:before,.giftgold a:before,.gilded-link a:before,
+    .infobar.gold:before,.gold-form h1.goldgift:before,.users-online:before,
+    .notice-taken:before,.notice-available:before,.info-notice:before {
+        content:      " ";
+        display:      block;
+        float:        left;
+        height:       16px;
+        margin-right: 5px;
+        width:        16px;
+    }
+
+    .validation-summary-errors {
+        font-weight:      bold;
+        padding:          15px;
+        border-width:     0 1px 4px;
+        margin-bottom:    20px;
+        border:           1px solid transparent;
+        border-radius:    4px;
+        background-color: #FF4136;
+        border-color:     #FF1103;
+        color:            #FFF;
+    }
+
 
     
     /* ! Body : Buttons
@@ -207,6 +346,14 @@
             color:        #FFF;
         }
         .btn-whoaverse-paging:active {position: relative; top: 1px;}
+        .btn-whoaverse-paging.disabled,.btn-whoaverse-paging[disabled],fieldset[disabled] .btn {
+            cursor:             not-allowed;
+            pointer-events:     none;
+            opacity:            0.65;
+            filter:             alpha(opacity=65);
+            -webkit-box-shadow: none;
+            box-shadow:         none;
+        }
 
             .btn-whoaverse-paging a {color: #FFF;}
 
@@ -289,6 +436,88 @@
         .form-control::-moz-placeholder {color: #777; opacity: 1;}
         .form-control:-ms-input-placeholder {color: #777;}
         .form-control::-webkit-input-placeholder {color: #777;}
+
+
+    /* ! Body : WVSprites
+    -------------------------------------------------------------------------------- */
+        
+        .whoaverse_padded {
+            background: url('/Graphics/WVSprite.png') 0 0;
+            height:     44px;
+            width:      125px;
+        }
+
+        .group_edit {
+            background: url('/Graphics/WVSprite.png') 0 -1546px;
+            height:     16px;
+            width:      16px;
+        }
+
+        .nsfw-thumb {
+            background: url('/Graphics/WVSprite.png') 0 -176px;
+            height:     70px;
+            width:      70px;
+        }
+
+        .pattern-welcome {
+            background: url('/Graphics/WVSprite.png') 0 -246px;
+            height:     128px;
+            width:      128px;
+        }
+
+        .thumb-placeholder {
+            background: url('/Graphics/WVSprite.png') 0 -374px;
+            height:     70px;
+            width:      70px;
+        }
+
+        .whoaverse-404 {
+            background: url('/Graphics/WVSprite.png') 0 -444px;
+            height:     405px;
+            width:      450px;
+        }
+
+        .whoaverse-bg {
+            background: url('/Graphics/WVSprite.png') 0 -849px;
+            height:     250px;
+            width:      1920px;
+        }
+
+        .whoaverse-mascot {
+            background: url('/Graphics/WVSprite.png') 0 -1099px;
+            height:     404px;
+            width:      400px;
+        }
+
+        .whoaverse {
+            background: url('/Graphics/WVSprite.png') 0 -1503px;
+            height:     43px;
+            width:      120px;
+        }
+
+        .expando-button.video.collapsed {
+            background-image:    url(/Graphics/WVSprite.png);
+            background-position: -87px -584px;
+            background-repeat:   no-repeat;
+        }
+
+            .expando-button.video.collapsed:hover, .eb-vch {
+                background-image:    url(/Graphics/WVSprite.png);
+                background-position: -58px -584px;
+                background-repeat:   no-repeat;
+            }
+
+        .expando-button.video.expanded, .eb-ve {
+            background-image:    url(/Graphics/WVSprite.png);
+            background-position: -29px -613px;
+            background-repeat:   no-repeat;
+        }
+
+            .expando-button.video.expanded:hover, .eb-veh {
+                background-image:    url(/Graphics/WVSprite.png);
+                background-position: 0px -613px;
+                background-repeat:   no-repeat;
+            }
 
 
     /* ! Body : Voting Arrows
@@ -375,6 +604,8 @@
                 margin:     8px 0;
             }
 
+            .md td,.md th {border: 1px solid #DDD; padding: 2px 5px;}
+
 
     /* ! Body : Tables
     -------------------------------------------------------------------------------- */
@@ -411,6 +642,7 @@
                 border-radius:         0 0 3px 3px;
                 border-style:          none solid solid;
                 border-width:          1px;
+                font-size:             12px;
                 padding:               15px;
             }
 
@@ -437,6 +669,8 @@
         position:            relative;
         z-index:             99;
     }
+
+    #header-top {position: absolute; right: 5px;}
 
 
     /* ! Header : Top
@@ -569,6 +803,18 @@
         -------------------------------------------------------------------------------- */
         
             #header-img {margin: 0 12px 10px;}
+
+                #header-img.default-header {
+                    background-image:    url(/Graphics/WVSprite.png);
+                    background-position: 0px -313px;
+                    background-repeat:   no-repeat;
+                    display:             inline-block;
+                    height:              40px;
+                    margin-bottom:       3px;
+                    text-indent:         -9999px;
+                    vertical-align:      bottom;
+                    width:               120px;
+                }
 
 
         /* ! Header : Left : Page name
@@ -918,6 +1164,27 @@
                 max-width: 100%;
             }
 
+            .thumbnail.nsfw {
+                background-repeat: no-repeat;
+                background:        url('/Graphics/WVSprite.png') 0 -176px;
+                height:            70px;
+                width:             70px;
+            }
+
+            .thumbnail.self {
+                background-repeat: no-repeat;
+                background:        url('/Graphics/WVSprite.png') 0 -374px;
+                height:            70px;
+                width:             70px;
+            }
+
+            .thumbnail.default {
+                background-repeat: no-repeat;
+                background:        url('/Graphics/WVSprite.png') 0 -374px;
+                height:            70px;
+                width:             70px;
+            }
+
 
         /* ! Sitetable : Link : Title
         -------------------------------------------------------------------------------- */
@@ -1121,6 +1388,13 @@
 
         .comment p.parent {font-size: 14px;}
 
+        .comment .showreplies {
+            display:       block;
+            margin-bottom: 15px;
+            margin-top:    7px;
+            padding:       5px;
+        }
+
         
         /* ! Sitetable : Comments : Tag line
         -------------------------------------------------------------------------------- */
@@ -1237,6 +1511,30 @@
             margin:      20px 0 10px;
             text-align:  left;
         }
+
+    #about-main .menuarea {font-size: 14px;}
+    #about-main .md .panel-heading {
+        margin-bottom: 0;
+        padding:       5px 10px;
+    }
+    #about-main .md .panel-heading a {color: #FFF;}
+    #about-main .md .panel-heading a:hover {color: #FFF; text-decoration: underline;}
+    #about-main .md .panel-heading-messagetitle {
+        background:    #F6F6F6;
+        border-color:  #DCDCDC;
+        border-style:  none solid solid;
+        border-width:  1px;
+        margin-bottom: 0;
+        padding:       5px 10px;
+    }
+    #about-main .md .panel-message-body {
+        border-color:          #DCDCDC;
+        -webkit-border-radius: 0 0 3px 3px;
+        border-radius:         0 0 3px 3px;
+        border-style:          none solid solid;
+        border-width:          1px;
+        padding:               5px 10px;
+    }
 
 
 /* ! Submit
@@ -1380,7 +1678,7 @@
 
     .col-md-offset-2 {margin-left: 0;}
     .col-md-4 {width: 100%;}
-    .col-md-4 {float: none !important;}
+    .col-md-4 {float: none;}
 
 
 /* ! Responsivity
