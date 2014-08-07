@@ -920,6 +920,7 @@
             position:              absolute;
             right:                 0;
             top:                   23px;
+            z-index:               5;
         }
 
         #header-bottom-right a {color: #555;}
