@@ -22,6 +22,7 @@
     a:hover { color: #66C2FB; text-decoration: none; }
 
     a.author { margin: 0 3px; }
+    .tagline a.author:hover { text-decoration: none; }
 
     b,strong { font-weight: bold; }
 
@@ -311,8 +312,8 @@
             border:                1px solid #DFDFDF;
             -webkit-border-radius: 3px;
             border-radius:         3px;
-            -webkit-box-shadow:    0 1px 1px hsla( 0,0%,0%,0.1 );
-            box-shadow:            0 1px 1px hsla( 0,0%,0%,0.1 );
+            -webkit-box-shadow:    0 2px 0 hsla( 0,0%,0%,0.1 );
+            box-shadow:            0 2px 0 hsla( 0,0%,0%,0.1 );
             color:                 #4C4C4C;
             display:               inline-block;
             font-size:             12px;
@@ -325,8 +326,8 @@
             background:         -moz-linear-gradient( top,#F4F4F4,#EEE );
             background:         -ms-linear-gradient( top,#F4F4F4,#EEE );
             background:         -o-linear-gradient( top,#F4F4F4,#EEE );
-            -webkit-box-shadow: 0 1px 1px hsla( 0,0%,0%,0.15 );
-            box-shadow:         0 1px 1px hsla( 0,0%,0%,0.15 );
+            -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.15 );
+            box-shadow:         0 2px 0 hsla( 0,0%,0%,0.15 );
             color:              #444;
         }
         .btn-whoaverse:active { position: relative; top: 1px; }
@@ -348,8 +349,8 @@
             border:                1px solid #4C9FD2;
             -webkit-border-radius: 2px;
             border-radius:         2px;
-            -webkit-box-shadow:    0 1px 1px hsla( 0,0%,0%,0.1 );
-            box-shadow:            0 1px 1px hsla( 0,0%,0%,0.1 );
+            -webkit-box-shadow:    0 2px 0 hsla( 0,0%,0%,0.1 );
+            box-shadow:            0 2px 0 hsla( 0,0%,0%,0.1 );
             color:                 #FFF;
             display:               inline-block;
             font-size:             10px;
@@ -363,8 +364,8 @@
             background:         -ms-linear-gradient( top,#66C2FB,#5AB3EA );
             background:         -o-linear-gradient( top,#66C2FB,#5AB3EA );
             border-color:       #5BACDE;
-            -webkit-box-shadow: 0 1px 1px hsla( 0,0%,0%,0.15 );
-            box-shadow:         0 1px 1px hsla( 0,0%,0%,0.15 );
+            -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.15 );
+            box-shadow:         0 2px 0 hsla( 0,0%,0%,0.15 );
             color:              #FFF;
         }
         .btn-whoaverse-paging:active { position: relative; top: 1px; }
@@ -388,8 +389,8 @@
             border:                1px solid #4C9FD2;
             -webkit-border-radius: 2px;
             border-radius:         2px;
-            -webkit-box-shadow:    0 1px 1px hsla( 0,0%,0%,0.1 );
-            box-shadow:            0 1px 1px hsla( 0,0%,0%,0.1 );
+            -webkit-box-shadow:    0 2px 0 hsla( 0,0%,0%,0.1 );
+            box-shadow:            0 2px 0 hsla( 0,0%,0%,0.1 );
             color:                 #FFF;
             cursor:                pointer;
             display:               inline-block;
@@ -404,8 +405,8 @@
             background:         -ms-linear-gradient( top,#66C2FB,#5AB3EA );
             background:         -o-linear-gradient( top,#66C2FB,#5AB3EA );
             border-color:       #5BACDE;
-            -webkit-box-shadow: 0 1px 1px hsla( 0,0%,0%,0.15 );
-            box-shadow:         0 1px 1px hsla( 0,0%,0%,0.15 );
+            -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.15 );
+            box-shadow:         0 2px 0 hsla( 0,0%,0%,0.15 );
             color:              #FFF;
         }
 
@@ -913,8 +914,8 @@
                             background:         -ms-linear-gradient( top,#FFF,#FBFBFB );
                             background:         -o-linear-gradient( top,#FFF,#FBFBFB );
                             border:             1px solid #E3E3E3;
-                            -webkit-box-shadow: 0 1px 1px hsla( 0,0%,0%,0.1 );
-                            box-shadow:         0 1px 1px hsla( 0,0%,0%,0.1 );
+                            -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.1 );
+                            box-shadow:         0 2px 0 hsla( 0,0%,0%,0.1 );
                             color:              #444;
                         }
                         .tabmenu li.selected a:hover { color: #4AABE7; }
@@ -931,8 +932,8 @@
                             background:         -ms-linear-gradient( top,#FFF,#FBFBFB );
                             background:         -o-linear-gradient( top,#FFF,#FBFBFB );
                             border:             1px solid #E3E3E3;
-                            -webkit-box-shadow: 0 1px 1px hsla( 0,0%,0%,0.1 );
-                            box-shadow:         0 1px 1px hsla( 0,0%,0%,0.1 );
+                            -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.1 );
+                            box-shadow:         0 2px 0 hsla( 0,0%,0%,0.1 );
                             color:              #444;
                         }
 
@@ -1378,8 +1379,8 @@
                         border:                1px solid #E19C42;
                         -webkit-border-radius: 2px;
                         border-radius:         2px;
-                        -webkit-box-shadow:    0 1px 1px hsla( 0,0%,0%,0.1 );
-                        box-shadow:            0 1px 1px hsla( 0,0%,0%,0.1 );
+                        -webkit-box-shadow:    0 2px 0 hsla( 0,0%,0%,0.05 );
+                        box-shadow:            0 2px 0 hsla( 0,0%,0%,0.05 );
                         display:               inline-block;
                         color:                 #FFF;
                         min-width:             75px;
@@ -1391,8 +1392,8 @@
                         background:         -ms-linear-gradient( top,#F9BF73,#F5B563 );
                         background:         -o-linear-gradient( top,#F9BF73,#F5B563 );
                         border-color:       #EFA544;
-                        -webkit-box-shadow: 0 1px 1px hsla( 0,0%,0%,0.15 );
-                        box-shadow:         0 1px 1px hsla( 0,0%,0%,0.15 );
+                        -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.1 );
+                        box-shadow:         0 2px 0 hsla( 0,0%,0%,0.1 );
                         text-decoration:    none;
                     }
 
