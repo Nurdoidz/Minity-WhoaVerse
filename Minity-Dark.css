@@ -11,24 +11,24 @@
 ================================================================================ */
 
     body {
-        background:  #FFF;
-        color:       #333;
+        background:  #333;
+        color:       #FFF;
         font:        10px Arial,sans-serif;
         line-height: 1.43;
         margin:      0;
     }
 
-    a,a:visited { color: #4AABE7; text-decoration: none; }
-    a:hover { color: #66C2FB; text-decoration: none; }
+    a,a:visited { color: #438BB7; text-decoration: none; }
+    a:hover { color: #559ECB; text-decoration: none; }
 
     a.author { margin: 0 3px; }
     .tagline a.author:hover { text-decoration: none; }
 
     b,strong { font-weight: bold; }
 
-    h2 { color: #333; font-size: 13px; }
+    h2 { color: #CCC; font-size: 13px; }
 
-    hr { margin: 10px 0; border-color: #CCC; }
+    hr { margin: 10px 0; border-color: #222; }
 
     label { font-size: 12px; font-weight: normal; }
 
@@ -71,10 +71,10 @@
     }
 
     .alert-singlethread {
-        background:    #FFEA9A;
+        background:    #444;
         border-radius: 3px;
-        border:        1px solid #DEC05F;
-        color:         #333;
+        border:        1px solid #555;
+        color:         #CCC;
         display:       block;
         margin:        15px 10px;
         padding:       8px;
@@ -104,11 +104,11 @@
     }
 
     .flair,.linkflairlabel {
-        background:            #F8F8F8;
-        border:                1px solid #E6E6E6;
+        background:            #444;
+        border:                1px solid #222;
         -webkit-border-radius: 2px;
         border-radius:         2px;
-        color:                 #666;
+        color:                 #DDD;
         display:               inline-block;
         line-height:           150%;
         margin-right:          3px;
@@ -257,7 +257,7 @@
     .user { color: inherit; }
 
         .user .userkarma {
-            border-bottom: 1px dotted #999;
+            border-bottom: 1px dotted #666;
             cursor:        help;
             font-weight:   normal;
             margin:        0 2px;
@@ -695,7 +695,7 @@
 ================================================================================ */
 
     #header {
-        background:    #FFF;
+        background:    #292929;
         height:        81px;
         margin:        0 0 10px;
         position:      relative;
@@ -709,8 +709,8 @@
     -------------------------------------------------------------------------------- */
 
         #sr-header-area {
-            background:     #FFF;
-            border-bottom:  1px solid #DCDCDC;
+            background:     #333;
+            border-bottom:  1px solid #222;
             font-size:      12px;
             height:         24px;
             line-height:    22px;
@@ -732,14 +732,14 @@
         -------------------------------------------------------------------------------- */
 
             #sr-bar li a {
-                color:              #818181;
+                color:              #AAA;
                 -webkit-transition: color 0.2s ease;
                 -moz-transition:    color 0.2s ease;
                 -ms-transition:     color 0.2s ease;
                 -o-transition:      color 0.2s ease;
                 transition:         color 0.2s ease;
             }
-            #sr-header-area:hover #sr-bar li a { color: #444; }
+            #sr-header-area:hover #sr-bar li a { color: #DDD; }
 
 
             #sr-header-area .sr-list {
@@ -749,15 +749,15 @@
 
             #sr-header-area .selected a { color: #4AABE7; }
             
-                .sr-list li a { color: #444; }
+                .sr-list li a { color: #DDD; }
 
             .sr-bar .separator { visibility: hidden; }
 
 
             #sr-more-link {
-                background:     #FFF;
+                background:     #333;
                 border:         0;
-                color:          #444;
+                color:          #DDD;
                 display:        inline-block;
                 font-weight:    normal;
                 height:         24px;
@@ -769,7 +769,7 @@
                 top:            -1px;
             }
             #sr-more-link:hover {
-                background:      #4AABE7;
+                background:      #555;
                 color:           #FFF;
                 text-decoration: none;
             }
@@ -784,7 +784,7 @@
 
                     .whoaSubscriptionMenu li ul {
                         border:             1px solid;
-                        border-color:       #FFF #EDEDED #EDEDED;
+                        border-color:       #333 #3A3A3A #3A3A3A;
                         -webkit-box-shadow: 3px 3px 3px hsla( 0,0%,0%,0.2 );
                         box-shadow:         3px 3px 3px hsla( 0,0%,0%,0.2 );
                         font-size:          12px;
@@ -799,9 +799,9 @@
 
                         .whoaSubscriptionMenu li ul li a:link,
                         .whoaSubscriptionMenu li ul li a:visited {
-                            background:      #FFF;
-                            border-bottom:   1px solid #EDEDED;
-                            color:           #444;
+                            background:      #333;
+                            border-bottom:   1px solid #222;
+                            color:           #DDD;
                             display:         block;
                             line-height:     16px;
                             padding:         3px 7px;
@@ -809,11 +809,11 @@
                             width:           auto;
                         }
                         .whoaSubscriptionMenu li ul li a:hover {
-                            background: #4AABE7;
-                            background: -webkit-linear-gradient( top,#54B5F1,#4AABE7 );
-                            background: -moz-linear-gradient( top,#54B5F1,#4AABE7 );
-                            background: -ms-linear-gradient( top,#54B5F1,#4AABE7 );
-                            background: -o-linear-gradient( top,#54B5F1,#4AABE7 );
+                            background: #347AA4;
+                            background: -webkit-linear-gradient( top,#438BB7,#347AA4 );
+                            background: -moz-linear-gradient( top,#438BB7,#347AA4 );
+                            background: -ms-linear-gradient( top,#438BB7,#347AA4 );
+                            background: -o-linear-gradient( top,#438BB7,#347AA4 );
                             color:      #FFF !important;
                         }
 
@@ -822,10 +822,10 @@
     -------------------------------------------------------------------------------- */
 
         #header-bottom-left {
-            background:    #F6F6F6;
+            background:    #292929;
             bottom:        0;
-            border-bottom: 1px solid #DCDCDC;
-            border-top:    1px solid #DCDCDC;
+            border-bottom: 1px solid #222;
+            border-top:    1px solid #222;
             font-size:     14px;
             height:        58px;
             margin:        0;
@@ -865,12 +865,12 @@
             }
 
             .pagename a {
-                color:                 #5A5A5A;
+                color:                 #CCC;
                 display:               inline-block;
                 padding:               6px 12px;
             }
             .pagename a:hover {
-                color:           #4AABE7;
+                color:           #438BB7;
                 text-decoration: none;
             }
 
@@ -911,15 +911,15 @@
                     -------------------------------------------------------------------------------- */
 
                         .tabmenu li.selected a {
-                            background:         #FFF;
-                            background:         -webkit-linear-gradient( top,#FFF,#FBFBFB );
-                            background:         -moz-linear-gradient( top,#FFF,#FBFBFB );
-                            background:         -ms-linear-gradient( top,#FFF,#FBFBFB );
-                            background:         -o-linear-gradient( top,#FFF,#FBFBFB );
-                            border:             1px solid #D0D0D0;
+                            background:         #333;
+                            background:         -webkit-linear-gradient( top,#333,#303030 );
+                            background:         -moz-linear-gradient( top,#333,#303030 );
+                            background:         -ms-linear-gradient( top,#333,#303030 );
+                            background:         -o-linear-gradient( top,#333,#303030 );
+                            border:             1px solid #222;
                             -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.1 );
                             box-shadow:         0 2px 0 hsla( 0,0%,0%,0.1 );
-                            color:              #444;
+                            color:              #DDD;
                         }
                         .tabmenu li.selected a:hover { color: #4AABE7; }
 
@@ -927,17 +927,17 @@
                     /* ! Header : Left : Tab menu : Tab : Unselected
                     -------------------------------------------------------------------------------- */
                     
-                        .tabmenu li.disabled a { color: #555; }
+                        .tabmenu li.disabled a { color: #AAA; }
                         .tabmenu li.disabled a:hover {
-                            background:         #FFF;
-                            background:         -webkit-linear-gradient( top,#FFF,#FBFBFB );
-                            background:         -moz-linear-gradient( top,#FFF,#FBFBFB );
-                            background:         -ms-linear-gradient( top,#FFF,#FBFBFB );
-                            background:         -o-linear-gradient( top,#FFF,#FBFBFB );
-                            border:             1px solid #D0D0D0;
+                            background:         #333;
+                            background:         -webkit-linear-gradient( top,#333,#303030 );
+                            background:         -moz-linear-gradient( top,#333,#303030 );
+                            background:         -ms-linear-gradient( top,#333,#303030 );
+                            background:         -o-linear-gradient( top,#333,#303030 );
+                            border:             1px solid #222;
                             -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.1 );
                             box-shadow:         0 2px 0 hsla( 0,0%,0%,0.1 );
-                            color:              #444;
+                            color:              #DDD;
                         }
 
 
@@ -945,8 +945,8 @@
     -------------------------------------------------------------------------------- */
     
         #header-bottom-right {
-            background:            #FFF;
-            border:                1px solid #DCDCDC;
+            background:            #333;
+            border:                1px solid #222;
             -webkit-border-radius: 0;
             border-radius:         0 0 0 5px;
             border-style:          none none solid solid;
@@ -959,11 +959,11 @@
             z-index:               5;
         }
 
-        #header-bottom-right a { color: #555; }
-        #header-bottom-right a:hover { color: #4AABE7; }
+        #header-bottom-right a { color: #DDD; }
+        #header-bottom-right a:hover { color: #438BB7; }
 
         #header-bottom-right .separator {
-            color:  #BBB;
+            color:  #222;
             margin: 0 4px;
         }
 
@@ -1018,20 +1018,20 @@
         .submissioninfo { border: 0; }
 
             .submissioninfo h2.whoaversename {
-                color:     #444;
+                color:     #BBB;
                 font-size: 15px;
                 margin:    10px 0;
             }
 
             .side .titlebox.submissioninfo .bottom {
                 border:    0;
-                color:     #444;
+                color:     #AAA;
                 font-size: 10px;
                 padding:   0;
                 margin:    0 0 20px;
             }
 
-                .ikp { border-bottom: 1px dotted #ADADAD; cursor: help; }
+                .ikp { border-bottom: 1px dotted #666; cursor: help; }
 
 
     /* ! Sidebar : Titlebox
@@ -1039,7 +1039,7 @@
         
         .titlebox { font-size: 12px; width: 100% !important; }
 
-            .side .titlebox .bottom .h6 { color: #666; }
+            .side .titlebox .bottom .h6 { color: #AAA; }
 
         .titlebox.footer {
             border:  0;
