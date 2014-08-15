@@ -85,7 +85,7 @@
         border-radius: 15px;
         border:        1px solid #FFF;
         box-shadow:    0px 1px 1px hsla( 0,0%,0%,0.3 );
-        color:         #fff;
+        color:         #FFF;
         display:       inline-block;
         font-size:     12px;
         height:        30px;
@@ -117,6 +117,8 @@
     }
 
         .linkflairlabel { font-size: 10px; max-width: 100px; }
+
+    .flat-list li.selected a { color: #555; }
 
     .gray { color: #DCDCDC; }
 
@@ -164,6 +166,14 @@
         background-repeat:   no-repeat;
     }
 
+    .panel-footer {
+        background:            #EEE;
+        -webkit-border-radius: 3px;
+        border-radius:         3px;
+        border-top:            1px solid #CCC;
+        padding:               10px 15px;
+    }
+
     .paragraph-text-left {
         font-size:   inherit;
         text-align:  left;
@@ -191,6 +201,7 @@
         border:                1px solid #E8E8E8;
         -webkit-border-radius: 2px;
         border-radius:         2px;
+        color:                 #FE5E5E;
         display:               inline-block;
         font-weight:           normal;
         min-width:             40px;
@@ -337,7 +348,6 @@
             cursor:             not-allowed;
             pointer-events:     none;
             opacity:            0.65;
-            filter:             alpha( opacity=65 );
             -webkit-box-shadow: none;
             box-shadow:         none;
         }
@@ -375,7 +385,6 @@
             cursor:             not-allowed;
             pointer-events:     none;
             opacity:            0.65;
-            filter:             alpha( opacity=65 );
             -webkit-box-shadow: none;
             box-shadow:         none;
         }
@@ -638,6 +647,19 @@
             }
 
             .md td,.md th { border: 1px solid #DDD; padding: 2px 5px; }
+
+            .md table > tbody > tr:nth-child(1) { background: #EEE; }
+
+            pre code { border: 0; }
+
+            pre,code {
+                background:            #F5F5F5;
+                border:                1px solid #CCC;
+                -webkit-border-radius: 3px;
+                border-radius:         3px;
+                color:                 #333;
+                font-size:             inherit;
+            }
 
 
     /* ! Body : Tables
@@ -1005,6 +1027,10 @@
 
     .side .spacer { margin: 3px 0 10px; }
 
+    .sidebox .spacer { background: none; }
+
+        .sidebox .subtitle { color: #666; }
+
 
     /* ! Sidebar : Search
     -------------------------------------------------------------------------------- */
@@ -1087,11 +1113,28 @@
         /* ! Sidebar : Titlebox : Admin tools
         -------------------------------------------------------------------------------- */
         
+            .sidecontentbox .collapse-button {
+                background:     #eee;
+                border-radius:  2px;
+                border:         1px solid #999;
+                color:          #333;
+                display:        inline-block;
+                font-size:      10px;
+                height:         10px;
+                line-height:    10px;
+                margin:         1px 8px;
+                text-align:     center;
+                vertical-align: bottom;
+                width:          10px;
+            }
+
             .sidecontentbox a.helplink { font-size: 11px; }
 
             .sidecontentbox .title h1 { font-size: 14px; }
 
                 ul.content { font-size: 12px; margin: 0; }
+
+                .icon-menu a { background: none; }
 
 
 
@@ -1233,7 +1276,7 @@
                 padding:     0 8px 0 0;
             }
 
-            .link .title.may-blank:visited { color: #444; }
+            .link .title.may-blank:visited { color: #454545; }
             .link .title.may-blank:hover { color: #4AABE7; }
 
 
@@ -1430,7 +1473,7 @@
 
             .tagline { font-size: 11px; }
 
-                .comment .expand { margin: 0 3px 0 0; }
+                .comment .expand { color: #AAA; margin: 0 3px 0 0; }
                 .comment .expand:hover { color: #555; text-decoration: none; }
 
                 .comment .collapsed {
@@ -1469,14 +1512,14 @@
     
         .pagination-container .btn-whoaverse-paging {
             margin:  6px 8px 6px 0;
-            padding: 4px 18px;
+            padding: 0;
         }
 
         .pagination-container .btn-whoaverse-paging a {
             display:     inline-block;
-            height:      auto;
-            line-height: unset;
-            width:       auto;
+            height:      20px;
+            line-height: 20px;
+            width:       64px;
         }
 
 
