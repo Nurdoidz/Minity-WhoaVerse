@@ -1574,7 +1574,7 @@
 /* ! About
 ================================================================================ */
 
-    .content.about-page { margin: 0; padding: 30px; }
+    .content.about-page { margin: 0; max-width: unset; padding: 30px; }
 
     #about-main .container {
         margin:    0 auto;
