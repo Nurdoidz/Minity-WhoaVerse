@@ -1901,4 +1901,16 @@
         }
     }
 
+    @media ( max-width: 420px ) {
+        .modal-dialog {
+            width: 300px;
+        }
+        .modal-body {
+            font-size: 12px;
+        }
+        .modal-body .col-md-4 input.form-control {
+            width: 260px;
+        }
+    }
+
 
