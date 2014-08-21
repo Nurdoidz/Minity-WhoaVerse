@@ -184,6 +184,14 @@
         text-align:  left;
     }
 
+    .radio input[type="radio"],
+    .radio-inline input[type="radio"],
+    .checkbox input[type="checkbox"],
+    .checkbox-inline input[type="checkbox"] {
+        margin-left: 0;
+        position:    absolute;
+    }
+
     .row { margin-bottom: 5px; margin-right: 0; }
 
     .searchresults {
@@ -597,10 +605,8 @@
     -------------------------------------------------------------------------------- */
 
         .md {
-            font-size:   14px;
-            line-height: 164%;
-            max-width:   100%;
-            overflow:    auto;
+            font-size: 14px;
+            overflow:  auto;
         }
 
             .md blockquote {
@@ -865,7 +871,7 @@
         /* ! Header : Left : Logo
         -------------------------------------------------------------------------------- */
         
-            #header-img { margin: 0 12px 10px; }
+            #header-img { margin: 7px 12px 10px; }
 
                 #header-img.default-header {
                     background-image:    url( /Graphics/WVSprite.png );
@@ -1055,7 +1061,6 @@
             }
 
             .side .titlebox.submissioninfo .bottom {
-                border:    0;
                 color:     #444;
                 font-size: 10px;
                 padding:   0;
@@ -1080,6 +1085,8 @@
 
         .titlebox.footer .bottom { font-size: 12px; }
 
+        .titlebox .bottom { border-top: 1px solid #AAA;}
+
 
         /* ! Sidebar : Titlebox : Page name
         -------------------------------------------------------------------------------- */
@@ -1089,21 +1096,11 @@
                 font-size:   18px;
                 font-weight: bold;
                 margin:      0 0 10px;
-                text-align:  center;
+                text-align:  left;
             }
 
                 .titlebox h1 a { color: inherit; }
                 .titlebox h1 a:hover { color: #4AABE7; text-decoration: none; }
-
-
-        /* ! Sidebar : Titlebox : Subscribers
-        -------------------------------------------------------------------------------- */
-            
-            .titlebox .btn-whoaverse-paging { display: block; margin: 5px auto; }
-
-            .titlebox .subscribers { display: block; text-align: center; }
-
-            .titlebox .users-online { text-align: center; }
 
 
         /* ! Sidebar : Titlebox : Markdown
@@ -1133,6 +1130,12 @@
                 width:          10px;
             }
 
+                .sidecontentbox .content {
+                    border:  1px solid #C0C0C0;
+                    margin:  0;
+                    padding: 5px;
+                }
+
             .sidecontentbox a.helplink { font-size: 11px; }
 
             .sidecontentbox .title h1 { font-size: 14px; }
@@ -1146,7 +1149,7 @@
 /* ! Sitetable
 ================================================================================ */
 
-    .content { margin: 0 320px 0 10px; max-width: 700px; z-index: 1; }
+    .content { margin: 0 320px 0 10px; z-index: 1; }
 
     .content > br { display: none; }
 
@@ -1413,41 +1416,13 @@
                 }
                 .link .buttons li a:hover { text-decoration: underline; }
 
-                    .link .buttons li a.comments {
-                        background:            #F5B563;
-                        background:            -webkit-linear-gradient( top,#F5B563,#EFA544 );
-                        background:            -moz-linear-gradient( top,#F5B563,#EFA544 );
-                        background:            -ms-linear-gradient( top,#F5B563,#EFA544 );
-                        background:            -o-linear-gradient( top,#F5B563,#EFA544 );
-                        border:                1px solid #E19C42;
-                        -webkit-border-radius: 2px;
-                        border-radius:         2px;
-                        -webkit-box-shadow:    0 2px 0 hsla( 0,0%,0%,0.05 );
-                        box-shadow:            0 2px 0 hsla( 0,0%,0%,0.05 );
-                        display:               inline-block;
-                        color:                 #FFF;
-                        min-width:             75px;
-                    }
-                    .link .buttons li a.comments:hover {
-                        background:         #66C2FB;
-                        background:         -webkit-linear-gradient( top,#F9BF73,#F5B563 );
-                        background:         -moz-linear-gradient( top,#F9BF73,#F5B563 );
-                        background:         -ms-linear-gradient( top,#F9BF73,#F5B563 );
-                        background:         -o-linear-gradient( top,#F9BF73,#F5B563 );
-                        border-color:       #EFA544;
-                        -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.1 );
-                        box-shadow:         0 2px 0 hsla( 0,0%,0%,0.1 );
-                        text-decoration:    none;
-                    }
-
 
         /* ! Sitetable : Link : Markdown
         -------------------------------------------------------------------------------- */
         
             .link .usertext .md {
-                background:            none;
-                border:                1px #DFDFDF;
-                border-style:          dotted none none;
+                background:            #F6F6F6;
+                border:                1px solid #DCDCDC;
                 -webkit-border-radius: 0;
                 border-radius:         0;
                 margin:                10px 0 0;
@@ -1501,7 +1476,7 @@
         /* ! Sitetable : Comments : Markdown
         -------------------------------------------------------------------------------- */
             
-            .comment .md { font-size: 13px; line-height: 155%; }
+            .comment .md { font-size: 13px; }
 
 
         /* ! Sitetable : Comments : Form
@@ -1792,17 +1767,11 @@
             text-align: center;
         }
 
-    .col-md-offset-2 { margin-left: 0; }
+    .modal-body .col-md-offset-2 { margin-left: 0; }
 
 
 /* ! Responsivity
 ================================================================================ */
-
-    @media ( min-width: 1140px) {
-        .side {
-            width: 400px;
-        }
-    }
 
     @media ( max-width: 950px ) {
         #sr-header-area {
