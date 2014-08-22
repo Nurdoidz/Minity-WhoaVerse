@@ -108,6 +108,11 @@
         padding:          4px;
     }
 
+    .field-validation-error {
+        color:       #FF4136;
+        font-weight: bold;
+    }
+
     .flair,.linkflairlabel {
         background:            #444;
         border:                1px solid #222;
@@ -1660,7 +1665,7 @@
 /* ! Register
 ================================================================================ */
 
-    .modal-dialog { width: 400px; margin: 10px auto !important; }
+    .modal-dialog { width: 400px; margin: 10px auto !important ;}
 
         .modal-content {
             background:            #333;

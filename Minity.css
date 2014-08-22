@@ -108,6 +108,11 @@
         padding:          4px;
     }
 
+    .field-validation-error {
+        color:       #FF4136;
+        font-weight: bold;
+    }
+
     .flair,.linkflairlabel {
         background:            #F8F8F8;
         border:                1px solid #E6E6E6;
