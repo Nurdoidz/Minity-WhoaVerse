@@ -1318,17 +1318,14 @@
                 .domain {
                     color:      #666;
                     font-size:  11px;
-                    visibility: hidden;
                 }
 
                 .domain a {
                     color:             #888;
-                    display:           inline-block;
                     max-width:         none;
                     overflow:          hidden;
                     -ms-text-overflow: ellipsis;
                     text-overflow:     ellipsis;
-                    padding:           0 2px;
                     vertical-align:    middle;
                     visibility:        visible;
                     white-space:       nowrap;
@@ -1385,8 +1382,6 @@
 
             .link .tagline { font-size: 13px; }
 
-                .tagline .commentvotesratio { visibility: hidden; }
-
                     .tagline .post_upvotes { color: #FE5E5E; visibility: visible; }
                     .tagline .post_downvotes { color: #5DBEFF; visibility: visible; }
 
@@ -1412,7 +1407,6 @@
                 .link .buttons li a {
                     color:       #6C6C6C;
                     font-weight: normal;
-                    padding:     2px 4px;
                 }
                 .link .buttons li a:hover { text-decoration: underline; }
 
@@ -1651,7 +1645,7 @@
 /* ! Register
 ================================================================================ */
 
-    .modal-dialog { width: 400px; }
+    .modal-dialog { width: 400px; margin: 10px auto !important; }
 
         .modal-content {
             background:            #FFF;
@@ -1843,15 +1837,6 @@
         }
         .link .title {
             font-size: 14px;
-        }
-        .link .flat-list {
-            font-size: 12px;
-        }
-        .link .buttons li a {
-            padding: 2px 8px;
-        }
-        .link .buttons li a.comments {
-            min-width: 100px;
         }
         .comment .comment {
             margin-left: 8px;
