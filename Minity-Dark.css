@@ -347,7 +347,7 @@
             display:               inline-block;
             font-size:             12px;
             font-weight:           bold;
-            padding:               6px;
+            padding:               6px 16px;
             text-align:            center;
         }
         .btn-whoaverse:hover {
@@ -920,7 +920,7 @@
                 font-variant:   normal;
                 font-weight:    normal;
                 margin:         0 14px 0 3px;
-                vertical-align: text-bottom;
+                vertical-align: middle;
             }
 
             .pagename a {
@@ -1168,7 +1168,7 @@
 /* ! Sitetable
 ================================================================================ */
 
-    .content { margin: 0 320px 0 10px; z-index: 1; }
+    .content { margin: 0 10px; z-index: 1; }
 
     .content > br { display: none; }
 
