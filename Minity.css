@@ -10,21 +10,18 @@
     Stylesheet on Github: http://github.com/Nurdoidz/Minity-WhoaVerse/
     ============================================================================ */
 
-
-
 /* ! Body
 ================================================================================ */
 
 body {
     background: #FFF;
-    color: #333;
+    color: #404040;
     font: 11px Arial,sans-serif;
     line-height: 1.43;
     margin: 0;
 }
 
 a, a:visited {
-    color: #4AABE7;
     text-decoration: none;
 }
 
@@ -77,15 +74,15 @@ label {
 }
 
 .alert-info {
-    background: #F5B563;
-    background: -webkit-linear-gradient( top,#F5B563,#EFA544 );
-    background: -moz-linear-gradient( top,#F5B563,#EFA544 );
-    background: -ms-linear-gradient( top,#F5B563,#EFA544 );
-    background: -o-linear-gradient( top,#F5B563,#EFA544 );
-    border-color: #E19C42;
-    color: #FFF;
+    background: none repeat scroll 0% 0% rgba(233, 233, 233, 1);
+    border: 1px solid #DCDCDC;
+    color: rgba(90, 90, 90, 1);
     font-size: 12px;
 }
+
+    .alert-info a {
+        color: #5AB3EA;
+    }
 
 .alert-warning {
     background: #F5E163;
@@ -136,6 +133,7 @@ label {
 .field-validation-error {
     color: #FF4136;
     font-weight: bold;
+    font-size: 12px;
 }
 
 .flair, .linkflairlabel {
@@ -169,7 +167,7 @@ label {
 }
 
 .control-label {
-    font: x-small verdana,arial,helvetica,sans-serif;
+    font: 11px arial,helvetica,sans-serif;
     color: black;
     font-weight: 700;
 }
@@ -318,12 +316,12 @@ label {
     }
 
         .tagline a:visited {
-            color: #4399CD;
+            color: #555;
         }
 
         .tagline a:hover {
             color: #4399CD;
-            text-decoration: underline;
+            text-decoration: none;
         }
 
     .tagline .submitter {
@@ -441,7 +439,7 @@ label {
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
-    padding: 6px 12px;
+    padding: 5px 12px;
     text-align: center;
 }
 
@@ -763,7 +761,7 @@ label {
     -------------------------------------------------------------------------------- */
 
 .md {
-    font-size: 14px;
+    font-size: 13px;
     overflow: auto;
 }
 
@@ -887,7 +885,7 @@ pre, code {
 
     .panel-title a:hover {
         color: #FFF;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
 .table > thead > tr > td.info, .table > tbody > tr > td.info,
@@ -932,7 +930,7 @@ pre, code {
 }
 
 .hover a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -1006,6 +1004,7 @@ pre, code {
 .whoaSubscriptionMenu {
     margin: 0;
     padding: 0;
+    text-transform: lowercase;
 }
 
     .whoaSubscriptionMenu li {
@@ -1559,7 +1558,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .link .title {
     color: #3A3A3A;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 700;
     line-height: 22px;
     margin: 0;
     overflow: hidden;
@@ -1567,7 +1566,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
     .link .title.may-blank:visited {
-        color: #454545;
+        color: #2E5488;
     }
 
     .link .title.may-blank:hover {
@@ -1689,17 +1688,21 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     }
 
 .link .tagline {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .tagline .post_upvotes {
     color: #FE5E5E;
     visibility: visible;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .tagline .post_downvotes {
     color: #5DBEFF;
     visibility: visible;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 
@@ -1727,7 +1730,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     }
 
         .link .buttons li a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
 
 
@@ -1874,10 +1877,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 .footer {
-    border: 1px #E9E9E9;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    border-style: solid;
+    border: none;
     clear: both;
     color: inherit;
     margin: 30px 0 0;
@@ -1902,7 +1902,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 
 #about-main .container {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 750px;
     padding: 0;
     width: auto;
 }
@@ -1950,7 +1950,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
     #about-main .md .panel-heading a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
 #about-main .md .panel-heading-messagetitle {
@@ -2074,6 +2074,10 @@ textarea.form-control {
     padding: 20px;
 }
 
+/*.form-group .control-label {
+        padding-right: 15px;
+}*/
+
 .form-horizontal .form-group {
     margin-left: 0;
     margin-right: 0;
@@ -2098,6 +2102,19 @@ textarea.form-control {
     text-shadow: 0 1px 0 hsla( 0,0%,0%,0.3 );
     width: 360px;
 }
+
+/*.col-md-1 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-md-2 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+}*/
 
 .modal-body .col-md-4 {
     float: none;
@@ -2150,9 +2167,8 @@ textarea.form-control {
 }
 
 .modal-body .btn-whoaverse {
-    display: block;
     margin: 0 auto;
-    padding: 6px 18px;
+    padding: 4px 18px;
 }
 
 .modal-footer {
@@ -2229,6 +2245,7 @@ textarea.form-control {
     .pagename {
         display: none;
     }
+
     .content {
         margin-right: 10px;
     }
