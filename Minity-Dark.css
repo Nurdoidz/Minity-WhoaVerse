@@ -2,11 +2,6 @@
     Minity CSS stylesheet for Whoaverse (http://whoaverse.com/)
     Designed by Nurdoidz
     
-    ----------------------------------------------------------------------------
-    Version 1.0.00 (2014-08-20)
-    + Release
-    ----------------------------------------------------------------------------
-
     Stylesheet on Github: http://github.com/Nurdoidz/Minity-WhoaVerse/
     ============================================================================ */
 
@@ -17,14 +12,14 @@
 
     body {
         background:  #333;
-        color:       #E8E8E8;
+        color:       #DFDFDF;
         font:        10px Arial,sans-serif;
         line-height: 1.43;
         margin:      0;
     }
 
-    a,a:visited { color: #438BB7; text-decoration: none; }
-    a:hover { color: #559ECB; text-decoration: none; }
+    a,a:visited { color: #56A8DA; text-decoration: none; }
+    a:hover { color: #DC5757; text-decoration: none; }
 
     a.author { margin: 0 3px; }
     .tagline a.author:hover { text-decoration: none; }
@@ -131,6 +126,8 @@
     .flat-list li.selected a { color: #BBB; }
 
     .gray { color: #DCDCDC; }
+
+    input,button,select,textarea { background: inherit; border: 1px solid #222; }
 
     .intro-text { font-size: 12px; }
 
@@ -249,11 +246,11 @@
         line-height: 18px;
     }
 
-    .tagline a { color: #438BB7; text-decoration: none; }
+    .tagline a { color: #56A8DA; text-decoration: none; }
     .tagline a:visited { color: #4B8AE1; }
     .tagline a:hover { color: #4399CD; text-decoration: underline; }
 
-        .tagline .submitter { color: #438BB7; }
+        .tagline .submitter { color: #56A8DA; }
         .tagline .moderator { color: #3FBF4C; }
         .tagline .admin { color: #E12D39; }
 
@@ -313,6 +310,49 @@
         width:        16px;
     }
 
+    .userstats {
+        background:         #313131;
+        border:             1px solid #272727;
+        -webkit-box-shadow: 0 1px 0 hsla( 0,0%,0%,0.17 );
+        box-shadow:         0 1px 0 hsla( 0,0%,0%,0.17 );
+        margin:             0 0 24px;
+    }
+
+        .userstats-heading-1 {
+            border-bottom: 1px solid #222;
+            color:         #AAA;
+            font-size:     13px;
+            font-weight:   bold;
+            margin:        0 5px;
+            padding:       10px;
+        }
+
+        .userstats-heading-2 {
+            background:  #2C2C2C;
+            border:      1px dotted #222;
+            color:       #DDD;
+            font-size:   13px;
+            font-style:  italic;
+            font-weight: bold;
+            margin:      10px;
+            padding:     5px;
+        }
+
+        .userstats-body { font-size: 12px; margin: 10px 13px; }
+
+            .userstats-body > p { margin: 0 0 6px; }
+
+        .userstats-submission-title { color: #56A8DA; }
+        .userstats-submission-title:hover { color: #DC5757; text-decoration: underline; }
+
+        .userstats-submission-author { font-weight: bold; }
+        .userstats-submission-author:hover { color: #DC5757; }
+
+        .userstats-submission-score { color: #AAA; font-weight: bold; }
+
+        .userstats-submission-subverse { color: #56A8DA; }
+        .userstats-submission-subverse:hover { color: #DC5757; text-decoration: underline; }
+
     .validation-summary-errors {
         font-weight:      bold;
         padding:          15px;
@@ -346,17 +386,17 @@
             color:                 #DDD;
             display:               inline-block;
             font-size:             12px;
-            font-weight:           bold;
+            font-weight:           normal;
             padding:               6px 16px;
             text-align:            center;
         }
         .btn-whoaverse:hover {
-            background:         #424242;
-            background:         -webkit-linear-gradient( top,#424242,#3B3B3B );
-            background:         -moz-linear-gradient( top,#424242,#3B3B3B );
-            background:         -ms-linear-gradient( top,#424242,#3B3B3B );
-            background:         -o-linear-gradient( top,#424242,#3B3B3B );
-            border-color:       #2C2C2C;
+            background:         #38434B;
+            background:         -webkit-linear-gradient( top,#38434B,#353C44 );
+            background:         -moz-linear-gradient( top,#38434B,#353C44 );
+            background:         -ms-linear-gradient( top,#38434B,#353C44 );
+            background:         -o-linear-gradient( top,#38434B,#353C44 );
+            border-color:       #242E39;
             -webkit-box-shadow: 0 1px 0 hsla( 0,0%,0%,0.15 );
             box-shadow:         0 1px 0 hsla( 0,0%,0%,0.15 );
             color:              #EEE;
@@ -370,13 +410,15 @@
             box-shadow:         none;
         }
 
+            a.btn-whoaverse.btn-block { color: #DDD; }
+
         .btn-whoaverse-paging {
-            background:            #438DB7;
-            background:            -webkit-linear-gradient( top,#438DB7,#3F85AA );
-            background:            -moz-linear-gradient( top,#438DB7,#3F85AA );
-            background:            -ms-linear-gradient( top,#438DB7,#3F85AA );
-            background:            -o-linear-gradient( top,#438DB7,#3F85AA );
-            border:                1px solid #2B5773;
+            background:            #4B4B4B;
+            background:            -webkit-linear-gradient( top,#4B4B4B,#454545 );
+            background:            -moz-linear-gradient( top,#4B4B4B,#454545 );
+            background:            -ms-linear-gradient( top,#4B4B4B,#454545 );
+            background:            -o-linear-gradient( top,#4B4B4B,#454545 );
+            border:                1px solid #303030;
             -webkit-border-radius: 2px;
             border-radius:         2px;
             -webkit-box-shadow:    0 2px 0 hsla( 0,0%,0%,0.1 );
@@ -388,12 +430,12 @@
             text-align:            center;
         }
         .btn-whoaverse-paging:hover {
-            background:         #3A7EA2;
-            background:         -webkit-linear-gradient( top,#3A7EA2,#377495 );
-            background:         -moz-linear-gradient( top,#3A7EA2,#377495 );
-            background:         -ms-linear-gradient( top,#3A7EA2,#377495 );
-            background:         -o-linear-gradient( top,#3A7EA2,#377495 );
-            border-color:       #2B5773;
+            background:         #38434B;
+            background:         -webkit-linear-gradient( top,#38434B,#353C44 );
+            background:         -moz-linear-gradient( top,#38434B,#353C44 );
+            background:         -ms-linear-gradient( top,#38434B,#353C44 );
+            background:         -o-linear-gradient( top,#38434B,#353C44 );
+            border-color:       #242E39;
             -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.15 );
             box-shadow:         0 2px 0 hsla( 0,0%,0%,0.15 );
             color:              #FFF;
@@ -410,12 +452,12 @@
             .btn-whoaverse-paging a { color: #FFF; }
 
         .btn-whoaverse-medium {
-            background:            #438DB7;
-            background:            -webkit-linear-gradient( top,#438DB7,#3F85AA );
-            background:            -moz-linear-gradient( top,#438DB7,#3F85AA );
-            background:            -ms-linear-gradient( top,#438DB7,#3F85AA );
-            background:            -o-linear-gradient( top,#438DB7,#3F85AA );
-            border:                1px solid #2B5773;
+            background:            #4B4B4B;
+            background:            -webkit-linear-gradient( top,#4B4B4B,#454545 );
+            background:            -moz-linear-gradient( top,#4B4B4B,#454545 );
+            background:            -ms-linear-gradient( top,#4B4B4B,#454545 );
+            background:            -o-linear-gradient( top,#4B4B4B,#454545 );
+            border:                1px solid #303030;
             -webkit-border-radius: 2px;
             border-radius:         2px;
             -webkit-box-shadow:    0 2px 0 hsla( 0,0%,0%,0.1 );
@@ -428,12 +470,12 @@
             text-align:            center;
         }
         .btn-whoaverse-medium:hover {
-            background:         #3A7EA2;
-            background:         -webkit-linear-gradient( top,#3A7EA2,#377495 );
-            background:         -moz-linear-gradient( top,#3A7EA2,#377495 );
-            background:         -ms-linear-gradient( top,#3A7EA2,#377495 );
-            background:         -o-linear-gradient( top,#3A7EA2,#377495 );
-            border-color:       #2B5773;
+            background:         #38434B;
+            background:         -webkit-linear-gradient( top,#38434B,#353C44 );
+            background:         -moz-linear-gradient( top,#38434B,#353C44 );
+            background:         -ms-linear-gradient( top,#38434B,#353C44 );
+            background:         -o-linear-gradient( top,#38434B,#353C44 );
+            border-color:       #242E39;
             -webkit-box-shadow: 0 2px 0 hsla( 0,0%,0%,0.15 );
             box-shadow:         0 2px 0 hsla( 0,0%,0%,0.15 );
             color:              #FFF;
@@ -453,6 +495,7 @@
             font-size:             13px;
             line-height:           140%;
             margin-bottom:         10px;
+            max-width:             825px;
             padding:               8px;
             -webkit-transition:    border-color 0.1s ease-in-out 0s;
             -moz-transition:       border-color 0.1s ease-in-out 0s;
@@ -580,7 +623,7 @@
     -------------------------------------------------------------------------------- */
         
         .arrow-downvote,.arrow-downvoted,.arrow-upvote,.arrow-upvoted {
-            background: url( /Graphics/Dark-SpriteSheet.png );
+            background: url( http://i.imgur.com/7oaFNNd.png );
             cursor:     pointer;
             height:     16px;
             margin:     auto;
@@ -596,7 +639,7 @@
 
         .comment .arrow-downvote,.comment .arrow-downvoted,
         .comment .arrow-upvote,.comment .arrow-upvoted {
-            background: url( /Graphics/Dark-SpriteSheet.png );
+            background: url( http://i.imgur.com/7oaFNNd.png );
             height:     12px;
             width:      12px;
         }
@@ -610,8 +653,9 @@
     -------------------------------------------------------------------------------- */
 
         .md {
-            font-size:   14px;
-            overflow:    auto;
+            font-size: 13px;
+            max-width: 825px;
+            overflow:  auto;
         }
 
             .md blockquote {
@@ -632,23 +676,28 @@
                 border-bottom: 1px dotted #666;
                 font-size:     125%;
                 font-weight:   normal;
-                margin:        4px 0;
+                line-height:   163%;
+                margin:        10px 0;
             }
 
             .md h2 {
                 color:       inherit;
                 font-size:   115%;
                 font-weight: bold;
-                margin:      4px 0;
+                line-height: 163%;
+                margin:      10px 0;
             }
 
             .md h3,.md h4,.md h5,.md h6 {
-                font-size: 110%;
-                font-style: italic;
-                margin: 4px 0;
+                font-size:   110%;
+                font-style:  italic;
+                line-height: 163%;
+                margin:      10px 0;
             }
 
-            .md p { margin: 6px 0; }
+            .md hr { margin: 10px 0; }
+
+            .md p { line-height: 150%; margin: 7px 0; }
 
             p.heading-2 {
                 font-size:   125%;
@@ -665,6 +714,8 @@
             .md td,.md th { border: 1px solid #292929; padding: 2px 5px; }
 
             .md table > tbody > tr:nth-child(1) { background: #2C2C2C; }
+
+            pre { padding: 4px 6px; }
 
             pre code { border: 0; }
 
@@ -1035,14 +1086,14 @@
         }
 
             #mail.havemail {
-                background:          url( /Graphics/Dark-SpriteSheet.png );
+                background:          url( http://i.imgur.com/7oaFNNd.png );
                 background-position: -15px 0;
                 cursor:              pointer;
                 height:              10px;
                 width:               15px;
             }
             #mail.nohavemail {
-                background:          url( /Graphics/Dark-SpriteSheet.png );
+                background:          url( http://i.imgur.com/7oaFNNd.png );
                 background-position: 0 0;
                 cursor:              pointer;
                 height:              10px;
@@ -1087,11 +1138,11 @@
             }
 
             .side .titlebox.submissioninfo .bottom {
-                border:    0;
-                color:     #AAA;
-                font-size: 10px;
-                padding:   0;
-                margin:    0 0 20px;
+                border-top: 1px solid #222;
+                color:         #AAA;
+                font-size:     10px;
+                padding:       0;
+                margin:        0 0 20px;
             }
 
                 .ikp { border-bottom: 1px dotted #666; cursor: help; }
@@ -1159,7 +1210,12 @@
 
             .sidecontentbox .title h1 { font-size: 14px; }
 
-                ul.content { font-size: 12px; margin: 0; }
+                .sidecontentbox .content {
+                    background: #303030;
+                    border: 1px solid #272727;
+                    font-size: 12px;
+                    margin: 0;
+                }
 
                 .icon-menu a { background: none; }
 
@@ -1168,7 +1224,7 @@
 /* ! Sitetable
 ================================================================================ */
 
-    .content { margin: 0 10px; z-index: 1; }
+    .content { margin: 0 320px 0 10px; z-index: 1; }
 
     .content > br { display: none; }
 
@@ -1294,7 +1350,6 @@
         -------------------------------------------------------------------------------- */
             
             .link .title {
-                color:       #4BA8E1;
                 font-size:   16px;
                 font-weight: normal;
                 line-height: 22px;
@@ -1303,8 +1358,10 @@
                 padding:     0 8px 0 0;
             }
 
-            .link .title.may-blank:visited { color: #B3B3B3; }
-            .link .title.may-blank:hover { color: #6AC6FF; }
+                .link a.title.may-blank { color: #B9B9B9; }
+
+                .link a.title.may-blank:visited { color: #7E6ABB; }
+                .link a.title.may-blank:hover { color: #56A8DA; }
 
 
             /* ! Sitetable : Link : Title : Sticky
@@ -1363,25 +1420,25 @@
             }
 
             .expando-button.selftext.collapsed {
-                background:          url( /Graphics/Dark-SpriteSheet.png );
+                background:          url( http://i.imgur.com/7oaFNNd.png );
                 background-position: 0 -42px;
                 height:              16px;
                 width:               16px;
             }
             .expando-button.selftext.collapsed:hover {
-                background:          url( /Graphics/Dark-SpriteSheet.png );
+                background:          url( http://i.imgur.com/7oaFNNd.png );
                 background-position: -16px -42px;
                 height:              16px;
                 width:               16px;
             }
             .expando-button.selftext.expanded {
-                background:          url( /Graphics/Dark-SpriteSheet.png );
+                background:          url( http://i.imgur.com/7oaFNNd.png );
                 background-position: 0 -58px;
                 height:              16px;
                 width:               16px;
             }
             .expando-button.selftext.expanded:hover {
-                background:          url( /Graphics/Dark-SpriteSheet.png );
+                background:          url( http://i.imgur.com/7oaFNNd.png );
                 background-position: -16px -58px;
                 height:              16px;
                 width:               16px;
@@ -1396,13 +1453,14 @@
             .link a.author:visited { color: unset; }
             .link a.author:hover { color: #438BB7; }
 
-            .subreddit.may-blank { color: #BBB; }
-            .subreddit.may-blank:hover { color: #438BB7; }
+            a.subreddit.may-blank { color: #438BB7; }
+            a.subreddit.may-blank:hover { color: #438BB7; text-decoration: underline; }
+            a.subreddit.may-blank:visited { color: #438BB7; }
 
             .link .tagline { font-size: 13px; }
 
-                    .tagline .post_upvotes { color: #BA4444; visibility: visible; }
-                    .tagline .post_downvotes { color: #438DB7; visibility: visible; }
+                .tagline .post_upvotes { color: #BA4444; visibility: visible; }
+                .tagline .post_downvotes { color: #438DB7; visibility: visible; }
 
 
         /* ! Sitetable : Link : Flat list 
@@ -1434,13 +1492,12 @@
         -------------------------------------------------------------------------------- */
         
             .link .usertext .md {
-                background:            none;
-                border:                1px #222;
-                border-style:          dotted none none;
+                background:            #313131;
+                border:                1px solid #272727;
                 -webkit-border-radius: 0;
                 border-radius:         0;
                 margin:                10px 0 0;
-                padding:               5px;
+                padding:               5px 10px;
             }
 
 
@@ -1478,8 +1535,8 @@
                 }
                 .comment .collapsed a { color: #888; }
 
-                .comment a.author { color: #AAA; font-weight: bold; }
-                .comment a.author:visited { color: #AAA; }
+                .comment a.author { color: #56A8DA; font-weight: bold; }
+                .comment a.author:visited { color: #56A8DA; }
                 .comment a.author:hover { color: #438BB7; }
                 .comment a.submitter { color: #438BB7; }
                 .comment a.moderator { color: #3FBF4C; }
@@ -1660,6 +1717,21 @@
             line-height: 140%;
             padding:     8px;
         }
+
+    .post_upvotes {
+        color: #BA4444;
+        visibility: visible;
+        font-weight: bold;
+    }
+
+    .post_downvotes {
+        color: #438DB7;
+        visibility: visible;
+        font-weight: bold;
+    }
+
+    .control-label { color: #AAA; }
+
 
 
 /* ! Register
@@ -1863,7 +1935,7 @@
         }
         .comment .arrow-downvote,.comment .arrow-downvoted,
         .comment .arrow-upvote,.comment .arrow-upvoted {
-            background: url( /Graphics/Dark-SpriteSheet.png );
+            background: url( http://i.imgur.com/7oaFNNd.png );
             height:     16px;
             width:      16px;
         }
