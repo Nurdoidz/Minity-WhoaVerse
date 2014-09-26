@@ -718,7 +718,7 @@ input, button, select, textarea {
 /* Global */
 
 .arrow-downvote, .arrow-downvoted, .arrow-upvote, .arrow-upvoted {
-    background: url( http://i.imgur.com/7oaFNNd.png );
+    background: url( /Graphics/Dark-SpriteSheet.png );
     cursor: pointer;
     height: 16px;
     margin: auto;
@@ -754,7 +754,7 @@ input, button, select, textarea {
 
 .comment .arrow-downvote, .comment .arrow-downvoted,
 .comment .arrow-upvote, .comment .arrow-upvoted {
-    background: url( http://i.imgur.com/7oaFNNd.png );
+    background: url( /Graphics/Dark-SpriteSheet.png );
     height: 12px;
     width: 12px;
 }
@@ -1247,7 +1247,7 @@ pre, code {
     }
 
         #mail.havemail {
-            background: url( http://i.imgur.com/7oaFNNd.png );
+            background: url( /Graphics/Dark-SpriteSheet.png );
             background-position: -15px 0;
             cursor: pointer;
             height: 10px;
@@ -1255,7 +1255,7 @@ pre, code {
         }
 
         #mail.nohavemail {
-            background: url( http://i.imgur.com/7oaFNNd.png );
+            background: url( /Graphics/Dark-SpriteSheet.png );
             background-position: 0 0;
             cursor: pointer;
             height: 10px;
@@ -1661,26 +1661,26 @@ pre, code {
         }
 
             .expando-button.selftext.collapsed {
-                background: url( http://i.imgur.com/7oaFNNd.png );
+                background: url( /Graphics/Dark-SpriteSheet.png );
                 background-position: 0 -42px;
                 height: 16px;
                 width: 16px;
             }
                 .expando-button.selftext.collapsed:hover {
-                    background: url( http://i.imgur.com/7oaFNNd.png );
+                    background: url( /Graphics/Dark-SpriteSheet.png );
                     background-position: -16px -42px;
                     height: 16px;
                     width: 16px;
                 }
 
             .expando-button.selftext.expanded {
-                background: url( http://i.imgur.com/7oaFNNd.png );
+                background: url( /Graphics/Dark-SpriteSheet.png );
                 background-position: 0 -58px;
                 height: 16px;
                 width: 16px;
             }
                 .expando-button.selftext.expanded:hover {
-                    background: url( http://i.imgur.com/7oaFNNd.png );
+                    background: url( /Graphics/Dark-SpriteSheet.png );
                     background-position: -16px -58px;
                     height: 16px;
                     width: 16px;
@@ -2295,7 +2295,7 @@ textarea.form-control {
 
     .comment .arrow-downvote, .comment .arrow-downvoted,
     .comment .arrow-upvote, .comment .arrow-upvoted {
-        background: url( http://i.imgur.com/7oaFNNd.png );
+        background: url( /Graphics/Dark-SpriteSheet.png );
         height: 16px;
         width: 16px;
     }
