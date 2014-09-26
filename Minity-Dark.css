@@ -2049,8 +2049,8 @@ pre, code {
 -------------------------------------------------------------------------------- */
 
 .well {
-    background: #F6F6F6;
-    border: 1px solid #DCDCDC;
+    background: #333;
+    border: 1px solid #303030;
     border-radius: 0;
     box-shadow: none;
     font-size: 12px;
