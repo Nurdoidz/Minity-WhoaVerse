@@ -568,7 +568,7 @@ input, button, select, textarea {
         background: -moz-linear-gradient( top,#38434B,#353C44 );
         background: -ms-linear-gradient( top,#38434B,#353C44 );
         background: -o-linear-gradient( top,#38434B,#353C44 );
-        border-color: #5BACDE;
+        border-color: #242E39;
         box-shadow: 0 1px 0 hsla( 0,0%,0%,0.15 );
         color: #FFF;
     }
